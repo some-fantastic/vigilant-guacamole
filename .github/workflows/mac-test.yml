@@ -1,0 +1,22 @@
+name: run on big macs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hi-world:
+    runs-on: macos-latest-large
+    steps:
+      - name: hello world
+        run: |
+          echo "hello world"
+          uname -a
+          system_profiler
+  hi-world2:
+    runs-on: macos-latest-xlarge
+    steps:
+      - name: hello world
+        run: |
+          echo "hello world"
+          uname -a
+          system_profiler
